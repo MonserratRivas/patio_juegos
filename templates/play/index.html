@@ -4,7 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            border: 0;
+            outline: solid black 1;
+        }
+
+        .row{
+            background-color: rgb(103, 169, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 2px;
+        }
+
+        .col{
+            background-color: brown;
+            flex: 1;
+            padding: 2px;
+            margin: 2px;
+            }   
+    </style>
 </head>
 <body>
     {% for x in range(0,fila): %}
